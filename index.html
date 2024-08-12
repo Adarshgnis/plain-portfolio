@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website" />
+    <meta
+      name="keywords"
+      content="portfolio, Adarsh Singh, adarsh, singh. developer, frontend developer, ui designer, react developer"
+    />
+    <meta name="author" content="Adarsh" />
+    <title>Adarsh Singh</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/fonts/unicons/unicons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/plugins.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/colors/navy.css" />
+    <link
+      rel="preload"
+      href="./assets/css/fonts/space.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .navbar.navbar-light.fixed .btn:not(.btn-expand):not(.btn-gradient) {
+        background: #343f52 !important;
+        border-color: #343f52 !important;
+        color: #ffffff !important;
+      }
+      @media (max-width: 991.98px) {
+        .navbar-expand-lg .navbar-collapse .dropdown-toggle:after {
+          color: #ffffff !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grow shrink-0">
+      <header class="relative wrapper !bg-[#edf2fc] my-1">
+        <nav
+          class="navbar navbar-expand-lg center-nav navbar-light navbar-bg-light !bg-[#ffffff]"
+        >
+          <div
+            class="container xl:flex-row lg:flex-row !flex-nowrap items-center"
+          >
+            <div class="navbar-brand w-full">
+              <!-- <img
+              src="./assets/img/logo.png"
+              srcset="./assets/img/logo@2x.png 2x"
+              alt="image"
+              /> -->
+              <h1 class="mt-3 p-0" style="padding: 0">
+                <a href="./index.html" style="padding: 0">
+                  &lt;Ad<i class="ri-github-fill" style="color: gray"></i
+                  >rsh&#47;&gt;
+                </a>
+              </h1>
+            </div>
+            <div
+              class="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
+            >
+              <div
+                class="offcanvas-header xl:hidden lg:hidden flex items-center justify-between flex-row p-6"
+              >
+                <h3
+                  class="text-white xl:text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0"
+                >
+                  Adarsh
+                </h3>
+                <button
+                  type="button"
+                  class="btn-close btn-close-white mr-[-0.75rem] m-0 p-0 leading-none text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)] focus:outline-0"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div
+                class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link scroll active" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#experiences"
+                      >Experiences</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#testimonials"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#about">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <!-- /.navbar-nav -->
+                <div class="offcanvas-footer xl:hidden lg:hidden">
+                  <div>
+                    <a href="mailto:first.last@email.com" class="link-inverse"
+                      >info@email.com</a
+                    >
+                    <br />
+                    00 (123) 456 78 90 <br />
+                    <nav class="nav social social-white mt-4">
+                      <a
+                        class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                        href="#"
+                        ><i
+                          class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"
+                        ></i
+                      ></a>
+                      <a
+                        class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                        href="#"
+                        ><i
+                          class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"
+                        ></i
+                      ></a>
+                      <a
+                        class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                        href="#"
+                        ><i
+                          class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"
+                        ></i
+                      ></a>
+                      <a
+                        class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                        href="#"
+                        ><i
+                          class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"
+                        ></i
+                      ></a>
+                      <a
+                        class="text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                        href="#"
+                        ><i
+                          class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"
+                        ></i
+                      ></a>
+                    </nav>
+                    <!-- /.social -->
+                  </div>
+                </div>
+                <!-- /.offcanvas-footer -->
+              </div>
+              <!-- /.offcanvas-body -->
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="navbar-other w-full !flex !ml-auto">
+              <ul class="navbar-nav !flex-row !items-center !ml-auto">
+                <li class="nav-item hidden xl:block lg:block md:block">
+                  <a
+                    href="./contact.html"
+                    class="btn btn-sm btn-primary text-white !bg-[#3f78e0] border-[#3f78e0] hover:text-white hover:bg-[#3f78e0] hover:border-[#3f78e0] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#3f78e0] active:border-[#3f78e0] disabled:text-white disabled:bg-[#3f78e0] disabled:border-[#3f78e0] !rounded-[50rem] hover:translate-y-[-0.15rem] hover:shadow-[0_0.25rem_0.75rem_rgba(30,34,40,0.15)]"
+                    >My Resume</a
+                  >
+                </li>
+                <li class="nav-item xl:hidden lg:hidden">
+                  <button class="hamburger offcanvas-nav-btn">
+                    <span></span>
+                  </button>
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
+          </div>
+          <!-- /.container -->
+        </nav>
+        <!-- /.navbar -->
+      </header>
+      <!-- /header -->
+      <section
+        id="home"
+        class="section-frame xl:mx-6 xl:rounded-[1rem] lg:mx-6 lg:rounded-[1rem] md:mx-6 md:rounded-[1rem] xxl:!mx-12 overflow-hidden"
+      >
+        <div
+          class="wrapper image-wrapper bg-image bg-cover bg-overlay bg-overlay-light-500 bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,.5)]"
+          data-image-src="./assets/img/photos/bg23.png"
+        >
+          <div
+            class="container py-24 xl:!py-[8rem] lg:!py-[8rem] md:!py-[8rem] !text-center !relative"
+          >
+            <div
+              class="!absolute shape yellow hidden xl:block lg:block w-5"
+              style="top: 18%; left: 5%"
+            >
+              <img
+                src="./assets/img/svg/pie.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div
+              class="!absolute shape leaf hidden xl:block lg:block !w-[2.5rem]"
+              style="bottom: 30%; left: 2%"
+            >
+              <img
+                src="./assets/img/svg/scribble.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div
+              class="!absolute shape fuchsia hidden xl:block lg:block w-6"
+              style="top: 20%; right: 2%; transform: rotate(70deg)"
+            >
+              <img
+                src="./assets/img/svg/tri.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div
+              class="!absolute shape grape hidden xl:block lg:block w-6"
+              style="bottom: 28%; right: 5%"
+            >
+              <img
+                src="./assets/img/svg/circle.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div class="flex flex-wrap mx-[-15px]">
+              <div
+                class="lg:w-9/12 xl:w-9/12 xxl:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto"
+              >
+                <h1
+                  class="font-semibold !leading-[1.15] xl:text-[3.5rem] text-[calc(1.475rem_+_2.7vw)] md:!px-10 lg:!px-0 xl:!px-8 mb-5"
+                >
+                  👋 Hello! I'm Adarsh, a Web Developer.
+                </h1>
+                <p
+                  class="lead !text-[1.2rem] !leading-[1.6] md:!px-10 lg:!px-0 xl:!px-0 lg:mx-[-2.5rem] xl:mx-0 !mb-8"
+                >
+                  I'm very passionate about the work that I do. If you're
+                  curious, you can find my professional profile on
+                  <a href="#" class="hover !text-[#60697b]">LinkedIn</a>, and my
+                  projects on
+                  <a
+                    href="https://github.com/adarshgnis"
+                    target="_blank"
+                    class="hover !text-[#60697b]"
+                    >GitHub</a
+                  >.
+                </p>
+                <a
+                  href="#projects"
+                  class="scroll btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end"
+                  >See My Works
+                  <i
+                    class="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"
+                  ></i
+                ></a>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <!-- /section -->
+      <section id="services" class="wrapper !bg-[#ffffff]">
+        <div class="container pt-24 xl:!pt-[8rem] lg:!pt-[8rem] md:!pt-[8rem]">
+          <div class="flex flex-wrap mx-[-15px] items-start mt-[-50px]">
+            <div
+              class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!sticky lg:!sticky mt-[50px]"
+              style="top: 8rem"
+            >
+              <h3
+                class="text-[calc(1.345rem_+_1.14vw)] !leading-[1.2] xl:text-[2.2rem] mb-5"
+              >
+                The service I offer is specifically designed to meet your needs.
+              </h3>
+              <p class="!mb-7">
+                As a front-end developer, I specialize in creating tailored,
+                user-focused web experiences that align with your business
+                objectives. Whether it's optimizing your website’s usability or
+                ensuring seamless interaction across all devices, my services
+                are designed to meet your specific requirements and elevate your
+                online presence.
+              </p>
+              <a
+                href="#contact"
+                class="scroll btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end"
+                >More Details
+                <i
+                  class="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"
+                ></i
+              ></a>
+            </div>
+            <!-- /column -->
+            <div
+              class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] px-[15px] max-w-full ml-auto mt-[50px]"
+            >
+              <div class="card !bg-[#eff7fa] !mb-6">
+                <div class="card-body flex flex-row p-[40px]">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/puzzle-2.svg"
+                      class="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] text-[#54a8c7] text-aqua mr-5"
+                      alt="image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[1.05rem] mb-2">Strategy & Planning</h3>
+                    <p class="!mb-0">
+                      Create strategic plans and roadmaps to align design and
+                      development efforts with your business goals and
+                      objectives.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <div class="card !bg-[#fff8ee] !mb-6">
+                <div class="card-body flex flex-row p-[40px]">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/smartphone.svg"
+                      class="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] text-[#fab758] text-yellow mr-5"
+                      alt="image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[1.05rem] mb-2">User Research</h3>
+                    <p class="!mb-0">
+                      Conduct in-depth research to understand user behavior and
+                      preferences, informing design decisions for a better user
+                      experience.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <div class="card !bg-[#f3f8f5] !mb-6">
+                <div class="card-body flex flex-row p-[40px]">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/design.svg"
+                      class="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] text-[#7cb798] text-leaf mr-5"
+                      alt="image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[1.05rem] mb-2">Brand Design</h3>
+                    <p class="!mb-0">
+                      Develop compelling brand identities, including logos,
+                      color schemes, and visual elements that reflect your
+                      brand’s values and vision.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <div class="card !bg-[#fef4f2] !mb-6">
+                <div class="card-body flex flex-row p-[40px]">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/video-editing.svg"
+                      class="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] text-[#f78b77] text-orange mr-5"
+                      alt="image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[1.05rem] mb-2">
+                      Design to Development Handoff
+                    </h3>
+                    <p class="!mb-0">
+                      Translate Figma designs into functional websites while
+                      preserving design integrity.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <div class="card !bg-[#f0f0f8] !mb-6">
+                <div class="card-body flex flex-row p-[40px]">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/browser.svg"
+                      class="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] text-[#605dba] text-grape mr-5"
+                      alt="image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[1.05rem] mb-2">Custom Web Applications</h3>
+                    <p class="!mb-0">
+                      Build tailored web apps with unique functionalities and
+                      integrations to meet your specific business needs.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+              <div class="card !bg-[#fdf1f8]">
+                <div class="card-body flex flex-row p-[40px]">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/search-2.svg"
+                      class="svg-inject icon-svg icon-svg-md !w-[2.6rem] !h-[2.6rem] text-[#e668b3] text-fuchsia mr-5"
+                      alt="image"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[1.05rem] mb-2">
+                      SEO & Performance Optimization
+                    </h3>
+                    <p class="!mb-0">
+                      Improve site speed and search engine rankings for better
+                      visibility.
+                    </p>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /column -->
+          </div>
+          <!-- /.row -->
+
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /section -->
+
+      <section id="projects" class="wrapper !bg-[#ffffff]">
+        <div class="container pt-24 xl:!pt-[8rem] lg:!pt-[8rem] md:!pt-[8rem]">
+          <div class="flex flex-wrap mx-[-15px] items-center mb-10">
+            <div
+              class="md:w-8/12 lg:w-9/12 xl:w-8/12 xxl:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full"
+            >
+              <h2
+                class="text-[calc(1.345rem_+_1.14vw)] font-semibold !leading-[1.2] xl:text-[2.2rem] !mb-0"
+              >
+                Check out some of my latest projects with creative ideas.
+              </h2>
+            </div>
+            <!--/column -->
+            <div
+              class="md:w-4/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!ml-auto lg:!ml-auto md:!ml-auto xl:!text-right lg:!text-right md:!text-right mt-5 xl:!mt-0 lg:!mt-0 md:!mt-0"
+            >
+              <a
+                href="https://github.com/adarshgnis"
+                target="_blank"
+                class="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end !mb-0"
+                >See All Projects
+                <i
+                  class="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"
+                ></i
+              ></a>
+            </div>
+            <!--/column -->
+          </div>
+          <!--/.row -->
+          <div class="card !bg-[#f6f3f9] mb-10">
+            <div class="card-body p-14 pb-0">
+              <div class="flex flex-wrap mx-[-15px]">
+                <div
+                  class="xl:w-4/12 lg:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full pb-14 self-center"
+                >
+                  <div
+                    class="uppercase tracking-[0.02rem] text-[0.75rem] font-semibold mb-3 text-[#a07cc5]"
+                  >
+                    Edtech Website
+                  </div>
+                  <h3 class="h1 post-title !mb-3 !leading-[1.3]">Cosmos IQ</h3>
+                  <p>
+                    Maecenas faucibus mollis interdum sed posuere consectetur
+                    est at lobortis. Scelerisque id ligula porta felis euismod
+                    semper. Fusce dapibus tellus cursus.
+                  </p>
+                  <a
+                    href="/cosmos-iq.html"
+                    class="btn btn-sm btn-violet text-white !bg-[#a07cc5] border-[#a07cc5] hover:text-white hover:bg-[#a07cc5] hover:border-[#a07cc5] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#a07cc5] active:border-[#a07cc5] disabled:text-white disabled:bg-[#a07cc5] disabled:border-[#a07cc5] btn-icon btn-icon-end mb-0 !text-[0.75rem]"
+                    >See Project
+                    <i
+                      class="uil uil-arrow-up-right before:content-['\e950']"
+                    ></i
+                  ></a>
+                </div>
+                <!-- /column -->
+                <div
+                  class="xl:w-7/12 xl:!ml-[8.33333333%] lg:w-7/12 lg:!ml-[8.33333333%] w-full flex-[0_0_auto] px-[15px] max-w-full !self-end"
+                >
+                  <figure class="m-0 p-0">
+                    <img
+                      class="max-w-full h-auto"
+                      src="./assets/img/photos/f1.png"
+                      srcset="./assets/img/photos/f1@2x.png 2x"
+                      alt="image"
+                    />
+                  </figure>
+                </div>
+                <!-- /column -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!--/.card-body -->
+          </div>
+          <!--/.card -->
+          <div class="card !bg-[#edf2fc] mb-10">
+            <div class="card-body p-14">
+              <div class="flex flex-wrap mx-[-15px] mt-[-50px] items-center">
+                <div
+                  class="xl:w-4/12 lg:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full xl:!order-2 xl:!ml-[8.33333333%] lg:!order-2 lg:!ml-[8.33333333%] mt-[50px]"
+                >
+                  <div
+                    class="uppercase tracking-[0.02rem] text-[0.75rem] font-semibold mb-3 text-[#3f78e0]"
+                  >
+                    Admin
+                  </div>
+                  <h3 class="h1 post-title !mb-3 !leading-[1.3]">Dashboards</h3>
+                  <p>
+                    Maecenas faucibus mollis interdum sed posuere consectetur
+                    est at lobortis. Scelerisque id ligula porta felis euismod
+                    semper. Fusce dapibus tellus cursus.
+                  </p>
+                  <a
+                    href="./dashboards.html"
+                    class="btn btn-sm btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end mb-0 !text-[0.75rem]"
+                    >See Project
+                    <i
+                      class="uil uil-arrow-up-right before:content-['\e950']"
+                    ></i
+                  ></a>
+                </div>
+                <!-- /column -->
+                <div
+                  class="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[50px]"
+                >
+                  <figure class="m-0 p-0">
+                    <img
+                      class="max-w-full h-auto"
+                      src="./assets/img/photos/f2.png"
+                      srcset="./assets/img/photos/f2@2x.png 2x"
+                      alt="image"
+                    />
+                  </figure>
+                </div>
+                <!-- /column -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!--/.card-body -->
+          </div>
+          <!--/.card -->
+          <div class="flex flex-wrap mx-[-15px] md:mx-[-20px] xl:mx-[-25px]">
+            <div
+              class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full"
+            >
+              <div class="card !bg-[#f3f8f5] mb-10 lg:!mb-0">
+                <div class="card-body p-14 pb-0">
+                  <div
+                    class="uppercase tracking-[0.02rem] text-[0.75rem] font-semibold mb-3 text-[#7cb798]"
+                  >
+                    Landing Page
+                  </div>
+                  <h3 class="h1 post-title !mb-3 !leading-[1.3]">My Flame</h3>
+                  <p>
+                    With My Flame, effortlessly connect and spark chemistry—your
+                    perfect match is just a swipe away!
+                  </p>
+                  <a
+                    href="./my-flame.html"
+                    class="btn btn-sm btn-leaf text-white !bg-[#7cb798] border-[#7cb798] hover:text-white hover:bg-[#7cb798] hover:border-[#7cb798] focus:shadow-[rgba(113,165,142,1)] active:text-white active:bg-[#7cb798] active:border-[#7cb798] disabled:text-white disabled:bg-[#7cb798] disabled:border-[#7cb798] btn-icon btn-icon-end !text-[0.75rem] mb-10"
+                    >See Project
+                    <i
+                      class="uil uil-arrow-up-right before:content-['\e950']"
+                    ></i
+                  ></a>
+                </div>
+                <!--/.card-body -->
+                <img
+                  class="card-img-bottom"
+                  src="./assets/img/photos/f3.png"
+                  srcset="./assets/img/photos/f3@2x.png 2x"
+                  alt="image"
+                />
+              </div>
+              <!--/.card -->
+            </div>
+            <!-- /column -->
+            <div
+              class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[25px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full"
+            >
+              <div class="card !bg-[#fbf1f4] xl:!mb-0 lg:!mb-0">
+                <div class="card-body p-14 pb-0">
+                  <div
+                    class="uppercase tracking-[0.02rem] text-[0.75rem] font-semibold mb-3 text-[#d16b86]"
+                  >
+                    Website and Dashboard
+                  </div>
+                  <h3 class="h1 post-title !mb-3 !leading-[1.3]">Job Portal</h3>
+                  <p>
+                    The Job Portal connects job seekers with employers for easy
+                    job searches and application management.
+                  </p>
+                  <a
+                    href="./job-portal.html"
+                    class="btn btn-sm btn-pink text-white !bg-[#d16b86] border-[#d16b86] hover:text-white hover:bg-[#d16b86] hover:border-[#d16b86] focus:shadow-[rgba(92,140,229,1)] active:text-white active:bg-[#d16b86] active:border-[#d16b86] disabled:text-white disabled:bg-[#d16b86] disabled:border-[#d16b86] btn-icon btn-icon-end !text-[0.75rem] mb-10"
+                    >See Project
+                    <i
+                      class="uil uil-arrow-up-right before:content-['\e950']"
+                    ></i
+                  ></a>
+                </div>
+                <!--/.card-body -->
+                <img
+                  class="card-img-bottom"
+                  src="./assets/img/photos/f5.png"
+                  srcset="./assets/img/photos/f4@2x.png 2x"
+                  alt="image"
+                />
+              </div>
+              <!--/.card -->
+            </div>
+            <!-- /column -->
+          </div>
+        </div>
+      </section>
+
+      <section id="experiences" class="wrapper !bg-[#ffffff]">
+        <div class="container py-[6rem] lg:!py-[8rem] md:!py-[8rem]">
+          <div
+            class="flex flex-wrap mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-50px]"
+          >
+            <div
+              class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px]"
+            >
+              <h2
+                class="text-[calc(1.345rem_+_1.14vw)] font-semibold !leading-[1.2] xl:text-[2.2rem] !mb-3"
+              >
+                My experiences
+              </h2>
+              <p
+                class="lead !text-[1.2rem] !font-regular !leading-[1.6] xxl:pr-8"
+              >
+                I've had the pleasure to work with companies 🏢 across a variety
+                of industries 🏛️ I'm always interested in new ✨ and exciting
+                adventures 🧨
+              </p>
+              <a
+                href="#"
+                class="btn btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end !mt-2"
+                >Download Resume
+                <i
+                  class="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"
+                ></i
+              ></a>
+            </div>
+            <!--/column -->
+            <div
+              class="xl:w-7/12 lg:w-7/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full mt-[50px]"
+            >
+              <ul
+                class="timeline xl:table lg:table md:table !w-full !m-0 !p-0 !list-none"
+              >
+                <li
+                  class="relative pl-8 xl:table-row xl:p-0 lg:table-row lg:p-0 md:table-row md:p-0"
+                >
+                  <div
+                    class="timeline-info meta uppercase tracking-[0.02rem] font-bold text-[#aab0bc] !text-[0.7rem] whitespace-nowrap mb-2 xl:text-right xl:table-cell xl:align-top xl:pr-6 lg:text-right lg:table-cell lg:align-top lg:pr-6 md:text-right md:table-cell md:align-top md:pr-6"
+                  >
+                    Oct 2023 - Present
+                  </div>
+                  <div
+                    class="timeline-marker absolute w-[0.6rem] text-[#343f52] left-0 inset-y-0 xl:relative xl:table-cell xl:align-top lg:relative lg:table-cell lg:align-top md:relative md:table-cell md:align-top before:w-[0.55rem] before:h-[0.55rem] before:content-[''] before:block before:absolute before:rounded-[100%] before:left-0 before:top-[0.2rem] before:bg-[#343f52] after:w-px after:content-[''] after:block after:absolute after:left-1 after:top-4 after:bottom-0 after:bg-[rgba(164,174,198,.2)]"
+                  ></div>
+                  <div
+                    class="table-cell align-top pb-8 xl:pl-6 lg:pl-6 md:pl-6"
+                  >
+                    <h3
+                      class="timeline-title xl:mt-[-0.25rem] lg:mt-[-0.25rem] md:mt-[-0.25rem]"
+                    >
+                      React Developer at Matriye Software
+                    </h3>
+                    <p class="!m-0">
+                      Redesigned an EdTech platform to improve user experience
+                      and ERP integration, integrated GA4 for better analytics,
+                      and adhered to best practices for code readability and
+                      SEO. Also developed several other projects, with
+                      experience in fast-paced startup environments.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="relative pl-8 xl:table-row xl:p-0 lg:table-row lg:p-0 md:table-row md:p-0"
+                >
+                  <div
+                    class="timeline-info meta uppercase tracking-[0.02rem] font-bold text-[#aab0bc] !text-[0.7rem] whitespace-nowrap mb-2 xl:text-right xl:table-cell xl:align-top xl:pr-6 lg:text-right lg:table-cell lg:align-top lg:pr-6 md:text-right md:table-cell md:align-top md:pr-6"
+                  >
+                    Jan 2023 - Jun 2023
+                  </div>
+                  <div
+                    class="timeline-marker absolute w-[0.6rem] text-[#343f52] left-0 inset-y-0 xl:relative xl:table-cell xl:align-top lg:relative lg:table-cell lg:align-top md:relative md:table-cell md:align-top before:w-[0.55rem] before:h-[0.55rem] before:content-[''] before:block before:absolute before:rounded-[100%] before:left-0 before:top-[0.2rem] before:bg-[#343f52] after:w-px after:content-[''] after:block after:absolute after:left-1 after:top-4 after:bottom-0 after:bg-[rgba(164,174,198,.2)]"
+                  ></div>
+                  <div
+                    class="table-cell align-top pb-8 xl:pl-6 lg:pl-6 md:pl-6"
+                  >
+                    <h3
+                      class="timeline-title xl:mt-[-0.25rem] lg:mt-[-0.25rem] md:mt-[-0.25rem]"
+                    >
+                      Frontend Web Developer at The Development Studio
+                    </h3>
+                    <p class="!m-0">
+                      Developed responsive front-end solutions with React.js and
+                      Next.js, designed UI/UX elements from Figma, and
+                      collaborated with teams to deliver high-quality web
+                      applications.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="relative pl-8 xl:table-row xl:p-0 lg:table-row lg:p-0 md:table-row md:p-0"
+                >
+                  <div
+                    class="timeline-info meta uppercase tracking-[0.02rem] font-bold text-[#aab0bc] !text-[0.7rem] whitespace-nowrap mb-2 xl:text-right xl:table-cell xl:align-top xl:pr-6 lg:text-right lg:table-cell lg:align-top lg:pr-6 md:text-right md:table-cell md:align-top md:pr-6"
+                  >
+                    Feb 2022 - Apr 2022
+                  </div>
+                  <div
+                    class="timeline-marker absolute w-[0.6rem] text-[#343f52] left-0 inset-y-0 xl:relative xl:table-cell xl:align-top lg:relative lg:table-cell lg:align-top md:relative md:table-cell md:align-top before:w-[0.55rem] before:h-[0.55rem] before:content-[''] before:block before:absolute before:rounded-[100%] before:left-0 before:top-[0.2rem] before:bg-[#343f52]"
+                  ></div>
+                  <div
+                    class="table-cell align-top xl:pl-6 lg:pl-6 md:pl-6 !pb-0"
+                  >
+                    <h3
+                      class="timeline-title xl:mt-[-0.25rem] lg:mt-[-0.25rem] md:mt-[-0.25rem]"
+                    >
+                      UI UX Designer at GenioBITS Technologies
+                    </h3>
+                    <p class="!m-0">
+                      As a UI/UX Design intern, I create intuitive interfaces,
+                      conduct user research, prototype, and collaborate on
+                      refining designs, while staying updated with design trends
+                      to enhance user experience.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!--/column -->
+          </div>
+          <!-- /.row -->
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-frame xxl:!mx-12">
+        <div
+          class="wrapper image-wrapper bg-image bg-cover bg-overlay bg-overlay-light-500 section-frame-wrapper bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,.5)]"
+          data-image-src="./assets/img/photos/bg23.png"
+        >
+          <div
+            class="container pt-24 xl:!py-[8rem] lg:!py-[8rem] md:!py-[8rem]"
+          >
+            <div class="flex flex-wrap mx-[-15px]">
+              <div
+                class="md:w-10/12 lg:w-9/12 xl:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto !text-center"
+              >
+                <h3
+                  class="text-[calc(1.345rem_+_1.14vw)] font-semibold !leading-[1.2] xl:text-[2.2rem] mb-10 xxl:!px-10"
+                >
+                  Don't take our word for it. See what customers are saying
+                  about us.
+                </h3>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <div class="flex flex-wrap mx-[-15px]">
+              <div
+                class="itemgrid xl:w-11/12 lg:w-11/12 md:w-11/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto xl:!mb-[-17.5rem] lg:!mb-[-17.5rem]"
+              >
+                <div class="flex flex-wrap mx-[-15px] isotope mt-[-30px]">
+                  <div
+                    class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
+                  >
+                    <div
+                      class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                      <div class="card-body flex-[1_1_auto] p-[40px]">
+                        <span
+                          class="ratings inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"
+                        ></span>
+                        <blockquote
+                          class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 m-[0_0_1rem] relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]"
+                        >
+                          <p>
+                            “ Adarsh is a hardworking and talented web designer.
+                            Their dedication and creativity consistently deliver
+                            high-quality results. A true asset to any team. ”
+                          </p>
+                          <div class="flex items-center text-left">
+                            <div class="info !pl-0">
+                              <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">
+                                Sunil Garad
+                              </h5>
+                              <p class="!mb-0 text-[.8rem]">
+                                Senior Project Head
+                              </p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                  </div>
+                  <!--/column -->
+                  <div
+                    class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
+                  >
+                    <div
+                      class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                      <div class="card-body flex-[1_1_auto] p-[40px]">
+                        <span
+                          class="ratings inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"
+                        ></span>
+                        <blockquote
+                          class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 m-[0_0_1rem] relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]"
+                        >
+                          <p>
+                            “I had a great experience working with Adarsh Singh
+                            on my website. From start to finish, he understood
+                            my vision and executed it with precision and
+                            creativity. The website looks fantastic and
+                            functions perfectly. I highly recommend Adarsh for
+                            his skill and professionalism.”
+                          </p>
+                          <div class="flex items-center text-left">
+                            <div class="info !pl-0">
+                              <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">
+                                Raghvan Koli
+                              </h5>
+                              <p class="!mb-0 text-[.8rem]">
+                                Marketing Specialist
+                              </p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                  </div>
+                  <!--/column -->
+                  <div
+                    class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
+                  >
+                    <div
+                      class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                      <div class="card-body flex-[1_1_auto] p-[40px]">
+                        <span
+                          class="ratings inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"
+                        ></span>
+                        <blockquote
+                          class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 m-[0_0_1rem] relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]"
+                        >
+                          <p>
+                            “Curabitur blandit tempus porttitor. Vivamus
+                            sagittis lacus vel augue laoreet rutrum faucibus
+                            dolor auctor. Nullam quis risus eget porta ac
+                            consectetur vestibulum. Donec sed odio dui
+                            consectetur.”
+                          </p>
+                          <div class="flex items-center text-left">
+                            <div class="info !pl-0">
+                              <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">
+                                Nikolas Brooten
+                              </h5>
+                              <p class="!mb-0 text-[.8rem]">Sales Manager</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                  </div>
+                  <!--/column -->
+                  <div
+                    class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
+                  >
+                    <div
+                      class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                      <div class="card-body flex-[1_1_auto] p-[40px]">
+                        <span
+                          class="ratings inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"
+                        ></span>
+                        <blockquote
+                          class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 m-[0_0_1rem] relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]"
+                        >
+                          <p>
+                            “Etiam adipiscing tincidunt elit convallis felis
+                            suscipit ut. Phasellus rhoncus tincidunt auctor.
+                            Nullam eu sagittis mauris. Donec non dolor ac elit
+                            aliquam tincidunt at at sapien.”
+                          </p>
+                          <div class="flex items-center text-left">
+                            <div class="info !pl-0">
+                              <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">
+                                Coriss Ambady
+                              </h5>
+                              <p class="!mb-0 text-[.8rem]">
+                                Financial Analyst
+                              </p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                  </div>
+                  <!--/column -->
+                  <div
+                    class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
+                  >
+                    <div
+                      class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                      <div class="card-body flex-[1_1_auto] p-[40px]">
+                        <span
+                          class="ratings inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"
+                        ></span>
+                        <blockquote
+                          class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 m-[0_0_1rem] relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]"
+                        >
+                          <p>
+                            “Maecenas sed diam eget risus varius blandit sit
+                            amet non magna. Cum sociis natoque penatibus magnis
+                            dis montes, nascetur ridiculus mus. Donec sed odio
+                            dui.”
+                          </p>
+                          <div class="flex items-center text-left">
+                            <div class="info !pl-0">
+                              <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">
+                                Jackie Sanders
+                              </h5>
+                              <p class="!mb-0 text-[.8rem]">
+                                Investment Planner
+                              </p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                  </div>
+                  <!--/column -->
+                  <div
+                    class="item md:w-6/12 lg:w-6/12 xl:w-4/12 w-full flex-[0_0_auto] px-[15px] max-w-full mt-[30px]"
+                  >
+                    <div
+                      class="card !shadow-[0_0.25rem_1.75rem_rgba(30,34,40,0.07)]"
+                    >
+                      <div class="card-body flex-[1_1_auto] p-[40px]">
+                        <span
+                          class="ratings inline-block relative w-20 h-[0.8rem] text-[0.9rem] leading-none before:text-[rgba(38,43,50,0.1)] after:inline-block after:not-italic after:font-normal after:absolute after:text-[#fcc032] after:content-['\2605\2605\2605\2605\2605'] after:overflow-hidden after:left-0 after:top-0 before:inline-block before:not-italic before:font-normal before:absolute before:text-[#fcc032] before:content-['\2605\2605\2605\2605\2605'] before:overflow-hidden before:left-0 before:top-0 five !mb-3"
+                        ></span>
+                        <blockquote
+                          class="!text-[0.85rem] !leading-[1.7] !font-normal pl-4 icon !mb-0 m-[0_0_1rem] relative p-0 border-0 before:content-['\201d'] before:absolute before:top-[-1.5rem] before:left-[-0.9rem] before:text-[rgba(52,63,82,0.05)] before:text-[10rem] before:leading-none before:z-[1]"
+                        >
+                          <p>
+                            “Donec id elit non mi porta gravida at eget metus.
+                            Nulla vitae elit libero, a pharetra augue. Cum
+                            sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur.”
+                          </p>
+                          <div class="flex items-center text-left">
+                            <div class="info !pl-0">
+                              <h5 class="!mb-1 text-[.9rem] !leading-[1.5]">
+                                Laura Widerski
+                              </h5>
+                              <p class="!mb-0 text-[.8rem]">Sales Specialist</p>
+                            </div>
+                          </div>
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                  </div>
+                  <!--/column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /.grid-view -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <!-- /section -->
+      <section id="about" class="wrapper !bg-[#ffffff]">
+        <div
+          class="container pt-[6rem] xl:!pt-[8rem] lg:!pt-[8rem] md:!pt-[8rem]"
+        >
+          <div
+            class="flex flex-wrap mx-[-15px] md:mx-[-20px] lg:mx-[-20px] xl:mx-[-35px] mt-[-50px] items-center xl:!mt-[8rem] lg:!mt-[8rem] mb-[6rem] xl:!mb-[8rem] lg:!mb-[8rem] md:!mb-[8rem]"
+          >
+            <div
+              class="md:w-8/12 lg:w-6/12 xl:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full !mx-auto mt-[50px]"
+            >
+              <div class="img-mask mask-3 xxl:!px-5">
+                <img
+                  style="mask-position: top center"
+                  src="./assets/img/avatars/avatar2.png"
+                  srcset="./assets/img/avatars/avatar@2x.jpg 2x"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <!--/column -->
+            <div
+              class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] xl:px-[35px] lg:px-[20px] md:px-[20px] px-[15px] max-w-full mt-[50px]"
+            >
+              <h2
+                class="text-[calc(1.345rem_+_1.14vw)] font-semibold !leading-[1.2] xl:text-[2.2rem] !mb-3"
+              >
+                More About me
+              </h2>
+              <p class="lead !text-[1.2rem] font-medium leading-[1.65]">
+                👋 Hello! I'm Adarsh, a Web Developer 👩🏻‍💻 based in Pune City 🚕.
+                I’m very passionate about the work 💌 that I do.
+              </p>
+              <p>
+                I specialize in creating dynamic, user-friendly websites and
+                applications, with expertise in both front-end and back-end
+                development. I stay current with industry trends and aim to
+                deliver high-quality, tailored solutions.
+              </p>
+              <p>
+                When I'm not coding, I explore new technologies and contribute
+                to open-source projects on GitHub. I also enjoy perfecting my
+                coffee brewing skills – because every great developer runs on
+                caffeine! Let's create something amazing together!
+              </p>
+              <a
+                href="#contact"
+                class="scroll btn btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end !mt-2"
+                >My Resume
+                <i
+                  class="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"
+                ></i
+              ></a>
+            </div>
+            <!--/column -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /section -->
+      <section
+        class="section-frame xl:mx-6 xl:rounded-[1rem] lg:mx-6 lg:rounded-[1rem] md:mx-6 md:rounded-[1rem] xxl:!mx-12 overflow-hidden"
+      >
+        <div
+          class="wrapper image-wrapper bg-image bg-cover bg-overlay bg-overlay-light-500 bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,.5)]"
+          data-image-src="./assets/img/photos/bg23.png"
+        >
+          <div
+            class="container py-24 xl:!py-[8rem] lg:!py-[8rem] md:!py-[8rem] !text-center"
+          >
+            <div
+              class="!absolute shape yellow hidden xl:block lg:block w-5"
+              style="top: 18%; left: 5%"
+            >
+              <img
+                src="./assets/img/svg/pie.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div
+              class="!absolute shape leaf hidden xl:block lg:block !w-[2.5rem]"
+              style="bottom: 30%; left: 2%"
+            >
+              <img
+                src="./assets/img/svg/scribble.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div
+              class="!absolute shape fuchsia hidden xl:block lg:block w-6"
+              style="top: 20%; right: 2%; transform: rotate(70deg)"
+            >
+              <img
+                src="./assets/img/svg/tri.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div
+              class="!absolute shape grape hidden xl:block lg:block w-6"
+              style="bottom: 28%; right: 5%"
+            >
+              <img
+                src="./assets/img/svg/circle.svg"
+                class="svg-inject icon-svg !w-full !h-full"
+                alt="image"
+              />
+            </div>
+            <div class="flex flex-wrap mx-[-15px]">
+              <div
+                class="lg:w-9/12 xl:w-9/12 xxl:w-8/12 w-full flex-[0_0_auto] px-[15px] max-w-full !mx-auto"
+              >
+                <h1
+                  class="font-semibold !leading-[1.15] xl:!text-[3.5rem] text-[calc(1.475rem_+_2.7vw)] lg:mx-[-2.5rem] xl:mx-0 mb-5"
+                >
+                  Got a 👾 project in mind? Let's work together. ✌️
+                </h1>
+                <p
+                  class="lead !text-[1.2rem] !leading-[1.6] md:!px-10 lg:!px-0 xl:!px-0 lg:mx-[-2.5rem] xl:mx-0 !mb-8"
+                >
+                  I bring rapid solutions to make the life of my clients easier.
+                  Have any questions? Reach out to me and I will get back to you
+                  shortly.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-navy text-white !bg-[#343f52] border-[#343f52] hover:text-white hover:bg-[#343f52] hover:border-[#343f52] focus:shadow-[rgba(82,92,108,1)] active:text-white active:bg-[#343f52] active:border-[#343f52] disabled:text-white disabled:bg-[#343f52] disabled:border-[#343f52] btn-icon btn-icon-end"
+                  >Contact Me
+                  <i
+                    class="uil uil-arrow-up-right ml-[.3rem] before:content-['\e950']"
+                  ></i
+                ></a>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+      </section>
+      <!-- /section -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer>
+      <div class="container py-7">
+        <div class="xl:flex lg:flex md:flex items-center justify-between">
+          <p class="mb-2 xl:!mb-0 lg:!mb-0">
+            © 2024 Adarsh. All rights reserved.
+          </p>
+          <nav
+            class="nav social social-muted !mb-0 xl:!text-right lg:!text-right md:!text-right"
+          >
+            <a
+              class="xl:m-[0_0_0_0.7rem] lg:m-[0_0_0_0.7rem] md:m-[0_0_0_0.7rem] sm:m-[0_.7rem_0_0] xsm:m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
+              href="#"
+              ><i
+                class="uil uil-twitter before:content-['\ed59'] text-[1rem] text-[#5daed5]"
+              ></i
+            ></a>
+            <a
+              class="xl:m-[0_0_0_0.7rem] lg:m-[0_0_0_0.7rem] md:m-[0_0_0_0.7rem] sm:m-[0_.7rem_0_0] xsm:m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
+              href="#"
+              ><i
+                class="uil uil-facebook-f before:content-['\eae2'] text-[1rem] text-[#4470cf]"
+              ></i
+            ></a>
+            <a
+              class="xl:m-[0_0_0_0.7rem] lg:m-[0_0_0_0.7rem] md:m-[0_0_0_0.7rem] sm:m-[0_.7rem_0_0] xsm:m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
+              href="#"
+              ><i
+                class="uil uil-dribbble before:content-['\eaa2'] text-[1rem] text-[#e94d88]"
+              ></i
+            ></a>
+            <a
+              class="xl:m-[0_0_0_0.7rem] lg:m-[0_0_0_0.7rem] md:m-[0_0_0_0.7rem] sm:m-[0_.7rem_0_0] xsm:m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
+              href="#"
+              ><i
+                class="uil uil-instagram before:content-['\eb9c'] text-[1rem] text-[#d53581]"
+              ></i
+            ></a>
+            <a
+              class="xl:m-[0_0_0_0.7rem] lg:m-[0_0_0_0.7rem] md:m-[0_0_0_0.7rem] sm:m-[0_.7rem_0_0] xsm:m-[0_.7rem_0_0] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 hover:translate-y-[-0.15rem]"
+              href="#"
+              ><i
+                class="uil uil-youtube before:content-['\edb5'] text-[1rem] text-[#c8312b]"
+              ></i
+            ></a>
+          </nav>
+          <!-- /.social -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- progress wrapper -->
+    <div
+      class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:text-[#343f52] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          class="fill-none stroke-[#343f52] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none"
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        />
+      </svg>
+    </div>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <!-- chatbot -->
+    <!-- <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "9c910735-eca1-4e06-ad40-da598b473799";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script> -->
+  </body>
+</html>
